@@ -1,0 +1,16 @@
+What is WWW?
+Full form = World Wide Web
+Commonly called as web.
+It is a system of interconnected documents and multimedia resources that can be accessed over the internet.
+It allow user to browse websites and access a vast array of information through links.
+
+Features:
+It is a open source.
+IT is spread over various website.
+it is cross platform.
+It is dynamic and interactive.
+
+there are three components of wwww.
+1. URL
+2. HTTP
+3. HTML

@@ -1,0 +1,10 @@
+1) create account on github.com
+2) create repository
+3) download git software
+4) github commands to upload all data on repository 
+   cmd ....
+   a)git init
+   b)git add .
+   c)git commit -m '30-04-2025 all data uploaded'
+   d)git remote add origin git repository url(paste)
+   e)git push -u origin master 

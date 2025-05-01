@@ -1,0 +1,8 @@
+what is IDE?
+Full form of IDE is Integrated Development Environment.
+Defination : It is a software development application that provide a facilities to computer programmer 
+for software development.it combines the developer tools into single GUI which makes the process of writitng, testing and debbuging of code more efficiently.
+Features : it is use as a code editor,compliler/interpreter, debugger,extensions and plugins etc.
+Benifites : Productivity, Code Quality, Integrated Environment, customization.
+Example : Vscode, Andriod studio, Eclipse, IntelliJ IDEA etc.
+ 

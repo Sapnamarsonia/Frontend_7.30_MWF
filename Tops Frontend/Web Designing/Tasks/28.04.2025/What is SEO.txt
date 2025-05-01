@@ -1,0 +1,18 @@
+What is SEO?
+SEO stands for search engine optimization. It is the practice of improving your website's content, 
+structure, and visibility to rank higher on search engines like Google. 
+
+Key elements of SEO include:
+Keyword Research – Finding out what terms people are searching for.
+On-Page SEO – Optimizing content, titles, meta descriptions, headers, and images on a page.
+Technical SEO – Improving site speed, mobile-friendliness, site architecture, and crawlability.
+Off-Page SEO – Building backlinks (links from other sites to yours) to increase site authority.
+Content Quality – Creating useful, relevant, and original content that satisfies user intent.
+
+Importance of SEO in Digital Marketing :
+1.Increases Visibility & Traffic
+2. Builds Trust and Credibility
+3. Cost-Effective Marketing
+4. Better User Experience
+5. Gives You a Competitive Edge
+6. Targets Quality Traffic

@@ -1,0 +1,9 @@
+What is Domain?
+Every computer on the the internet has an address which is unique in nature. It is String of number which is called IP address.
+To communicate with each other, computers identify another computer via its IP address.
+It is difficult for humans to remember the IP address.
+So Domain Name Server i.e. DNS is invented.
+It is sequence of alphabets and numbers.
+
+ex. www.google.com so here google.com is the domain name.
+www is the interface.

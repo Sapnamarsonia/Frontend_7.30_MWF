@@ -1,0 +1,16 @@
+What is URL ? 
+A URL (Uniform Resource Locator) is the address used to access resources on the internet.
+It's what you type into a web browser to visit a website or access a specific page or file.
+
+For example, in the URL https://www.example.com/page1.html:
+
+https — the protocol (how the browser should communicate with the server)
+www.example.com — the domain name (where the resource is hosted)
+/page1.html — the path to a specific file or page on the site
+
+Strucuture of the URL contains so many parts, Scheme, Domain name, Port, Path to the file, 
+Query, Paramter, Fragment.
+
+So in simple terms, a URL is the web address that points to something online.
+And it plays vital role in web navigation and online commuication by providing a structured way 
+to locate and access to various web resources.
