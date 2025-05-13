@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>marquee tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <!-- <marquee> : marquee is used to scroll or slide of any text or image in left | right | up | down  -->
+
+        <h1 style = "color:blue ;text-align:center;">Sports List</h1>
+        <!-- this will move left to right as this is a default direction  -->
+
+        <h3 style = "color:red ;text-align:center;">Left to Right</h3>
+         <marquee><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+        <!-- this will move upside  -->
+         <h3 style = "color:red ;text-align:center;">Down to up</h3>
+         <marquee direction ="up"><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+        <!-- this will move downward  -->
+        <h3 style = "color:red ;text-align:center;">Up to Down</h3>
+        <marquee direction ="down"><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+         <!-- this will move  -->
+         <h3 style = "color:red ;text-align:center;">Right to Left</h3>
+        <marquee direction ="right"><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+        <!-- this will move  -->
+        <h3 style = "color:red ;text-align:center;">On mouse effect start stop</h3>
+         <marquee direction ="left" onmouseover="stop(this.value)" onmouseout="start(this.value)"><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+        <!-- this will move  -->
+        <h3 style = "color:red ;text-align:center;">Scroll Speed fast</h3>
+         <marquee direction ="left" onmouseover="stop(this.value)" onmouseout="start(this.value)" scrollamount="50" scrolldelay="200"><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+         <!-- this will move  -->
+        <h3 style = "color:red ;text-align:center;">Scroll Speed slow</h3>
+         <marquee direction ="left" onmouseover="stop(this.value)" onmouseout="start(this.value)" scrollamount="50" scrolldelay="1200"><p> Cricket , Badminton , Vollyball , Basketball , Hockey , Chess , Football , Jevelin Throw , Disc throw , Cycling </p></marquee>
+
+
+</body>
+</html>
