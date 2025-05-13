@@ -1,0 +1,39 @@
+<!--
+What is html?
+html stands for hypertext markup language.
+html is used for create website webpages or webpage structure.
+html first time release in 1986 bt Tim berner lee
+html file extension save with  .html or .htm
+html is not any language it is a markup langauge 
+
+
+What is hypertext ?
+hypertext means redirect one page to another page
+ex: <a href="https://www.tops-int.com"> click to open tops</a>
+
+WHat is markup language?
+html is not any language it is a markup language.
+markup language is html load on web browser or interact with browser so we called it is markup language.
+
+html is case-insensitive markup language.
+ex: <html> or <HTML> or <Html>
+
+html provide tag and its defined inside of <> angular brackets.
+html tag provide structure of webpage.
+a) paired tag
+b) non-paired tag
+
+a) paired tag:
+    paired tag define <p></p> which defines start and close this is called paired tag.
+    ex: <h1></h1> or <p></p>
+
+b) non paired tag
+    non-paired tage defines <hr> start and not need to close this is called non-paired.
+    ex: <hr> , <br> , <input> , <meta> , <link> , <img> and <p>
+
+What is Boiler plate or html structure or html skeleton..?
+
+
+
+
+ -->
