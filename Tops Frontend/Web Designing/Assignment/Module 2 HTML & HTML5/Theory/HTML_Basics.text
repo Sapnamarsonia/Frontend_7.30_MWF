@@ -1,0 +1,99 @@
+Question 1: Define HTML. What is the purpose of HTML in web development? 
+Answer: HTML Stands for Hypertext Markup Language.
+It is standard language and use to create and structure web content.
+
+Purpose of HTML:
+1. Structure of web pages: Html provides the basic structue of the web pages by organizing content into 
+elements like paragraph, links, images, videos,tables and many more.
+2. Presentation : HTML doesn't control design but it defines how the content is grouped.
+3. Foundation of Web technologies: HTML works together with css and javascript to make the websites and 
+web applications funtional.
+4.Hyperlinks and naviagtion: With the help of HTML we can enable between diffrent pages and resources 
+through hyperlink <a> tag, which allow user to navigate through web.
+5. Embedding Media : HTML allow us to embedd images,audio,video and many more elements directly
+____________________________________________________________________________________________________________
+
+Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags and their purposes. 
+Answer : The basic structure of the html is given below,
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Main Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+
+Mandatory tags in and Their purposes are:
+Tags                       Purpose
+_______________________________________________________________________________________________
+<!DOCTYPE html>            Declares the document type and version of HTML (HTML5 in this case).
+<html>                     Root element that wraps all the content of the HTML document.
+<head>                     Contains meta-information about the document (e.g., title, charset).
+<title>                    Sets the title of the web page shown in the browser tab.
+<body>                     Contains the visible content of the web page (text, images, etc.).
+
+These are optional but Common Tags Inside <head>
+<meta charset="UTF-8"> – Sets the character encoding (important for non-English characters).
+<link> – Used to link external resources like CSS.
+<script> – Adds or links to JavaScript files.
+
+____________________________________________________________________________________________________________________
+
+Question 3: What is the difference between block-level elements and inline elements in 
+HTML? Provide examples of each. 
+
+Answer: Block Level element :
+It starts alwayss with the new line.
+Take the full width of their parent container by default.
+
+Examples:
+<div> – Generic container for block-level content
+<p> – Paragraph
+<h1> to <h6> – Headings
+<ul>, <ol>, <li> – Lists
+<section>, <article>, <header>, <footer>
+
+Examples :  <div>
+            <h2>Hello world</h2>
+            <p>This is a paragraph inside a div.</p>
+            </div>
+
+Inline Elements:
+Do not start on a new line.
+Take up only as much width as necessary.
+
+Examples:
+<span> – Generic container for inline content
+<a> – Anchor (hyperlink)
+<strong>, <em> – Emphasis
+<img> – Image
+<br> – Line break
+
+Examples: <p>This is a <strong>bold</strong> word and this is an <a href="#">inline link</a>.</p>
+
+____________________________________________________________________________________________________________________
+
+Question 4: Discuss the role of semantic HTML. Why is it important for accessibility and SEO? 
+Provide examples of semantic elements.
+Answer: Semantic Elements = elments with a meaning.
+A semantic elments clearly describe its meaning to both the browser and the developer.
+example of non-semantic elements: <div> and <span> it doesn't tell anything about its content.
+but instead of that <img>,<table> and <article> this tags clearly defines its content.
+
+1. Accessibility
+Semantic HTML improves the user experience for people who use assistive technologies:
+Screen readers rely on the correct use of semantic tags to interpret the structure and content of the page.
+Proper tags (e.g., <nav>, <main>, <article>) help users navigate pages more efficiently.
+Enhances keyboard navigation and interaction for users who cannot use a mouse.
+
+2. Search Engine Optimization (SEO)
+Search engines use semantic elements to better understand content:
+Helps search engines identify important content areas (e.g., headers, main content, sidebars).
+Improves how content is indexed and potentially increases the visibility in search engine results.
+Enables rich snippets and improved context in search listings.
+
+

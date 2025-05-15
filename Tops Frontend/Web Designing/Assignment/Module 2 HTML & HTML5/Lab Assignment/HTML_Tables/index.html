@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML_Tables</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- here we have to create table style that using inline css -->
+     <!-- inline css means style attribute is given within the element. -->
+  <table style="border: 2px solid #000;width:100%">
+        <h1 align="center">HTML TABLE EXAMPLE</h1>
+
+    <thead style="background-color:lightcoral">
+      <tr>
+        <th style="border: 1px solid  lightblue; padding: 8px;">Product Name</th>
+        <th style="border: 1px solid lightblue; padding: 8px;">Product Image</th>
+        <th style="border: 1px solid lightblue; padding: 8px;">Price</th>
+        <th style="border: 1px solid lightblue; padding: 8px;">Description</th>
+        <th style="border: 1px solid lightblue; padding: 8px;">Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid lightblue; padding: 8px;">Wireless Mouse</td>
+        <td style="border: 1px solid lightblue; padding: 8px;"><img src="images/mouse.jpg" width="50px" height="50px" alt="Mouse"></td>
+        <td style="border: 1px solid lightblue; padding: 8px;">₹1199.00</td>
+        <td style="border: 1px solid lightblue; padding: 8px;">Wireless mouse with adjustable DPI.</td>
+        <td style="border: 1px solid lightblue; padding: 8px;">In Stock</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid lightblue; padding: 8px;" rowspan="2">Bluetooth Headphones</td>
+        <td style="border: 1px solid lightblue; padding: 8px;" rowspan="2"><img src="images/headphone.jpg" width="50px" height="50px" alt="Headphones"></td>
+        <td style="border: 1px solid lightblue; padding: 8px;">₹599.00.</td>
+        <td style="border: 1px solid lightblue; padding: 8px;">Noise-cancelling over-ear headphones.</td>
+        <td style="border: 1px solid lightblue; padding: 8px;">In Stock</td>
+      </tr>
+      <tr>
+        <!-- merged name/image, new variant row -->
+        <td style="border: 1px solid lightblue; padding: 8px;">₹1999.00</td>
+        <td style="border: 1px solid lightblue; padding: 8px;">Limited edition with extra battery life.</td>
+        <td style="border: 1px solid lightblue; padding: 8px;">Out of Stock</td>
+      </tr>
+      <tr>
+         <!-- Description and avaibality, new variant column -->
+         <td style="border: 1px solid lightblue; padding: 8px;">USB-C Charger</td>
+        <td style="border: 1px solid lightblue; padding: 8px;"><img src="images/usb.webp"width="50px" height="50px" alt="Charger"></td>
+        <td style="border: 1px solid lightblue; padding: 8px;">₹799.00</td>
+        <td colspan="2" style="border: 1px solid lightblue; padding: 8px;">Fast charging adapter compatible with most USB-C devices. (In Stock)</td>
+      </tr>
+    </tbody>
+
+    </table>
+    
+</body>
+</html>

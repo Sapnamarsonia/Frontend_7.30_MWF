@@ -1,0 +1,80 @@
+Question 1: Explain the structure of an HTML table and the purpose of each of the following 
+elements: <table>, <tr>, <th>, <td>, and <thead>. 
+
+Answer: HTMl tables allow web developer to arrange data into rows and columns.
+A table in html consist of table cells inside rows and columns.
+1. <table> : it defines a table.It wrap all the content of the table.
+Example: 
+<table>
+  <!--content -->
+</table>
+
+2.Table rows (<tr>): Each table rows starts with a <tr> and ends with </tr>.tr Representssingle row in the table.
+we can have as many as row we want.
+Example:
+<tr>
+  <td>Row 1, Cell 1</td>
+  <td>Row 1, Cell 2</td>
+</tr>
+
+3.Table Headers (<th>): sometimes we have we want our cells to be table header cells in that case we use <th> and </th>
+instaed of <td>.
+in <th> tag elemets are bold and centered by default but we can change using css.
+Example: 
+<tr>
+  <th>Name</th>
+  <th>Age</th>
+</tr>
+
+4.Table Cell (<td>) : Each table cell is defined by a <td> and </td> tag.Everything between <td> and </td> is the content of a table cell.
+Example:
+<tr>
+  <td>demo</td>
+  <td>30</td>
+</tr>
+
+5.Table head (<thead>) : This group the header content in a table.
+It orgamize the structure systematically.
+Example:
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+</thead>
+___________________________________________________________________________________________________________________
+Question 2: What is the difference between colspan and rowspan in tables? Provide examples.
+Answer: In html colspan and rowspan are the attribute used in <td> or <tr> elemnts to merge the coloumn or row resp.
+1. colspan merge two column.
+ex: <tr>
+    <th colspan="2">name</th>
+    <th>age</th>
+    </tr>
+    <tr>
+    <td>Rohit</td>
+    <td>Sharma</td>
+    <td>40<?td>
+
+    so here , name will appear as Rohit sharma together.
+
+    2. rowspan merges multiple rows together in a single cell.
+    <tr>
+    <th rowspan="2" > name</th>
+    <th>age</th>
+    </tr>
+    <tr>
+    <td>30</td>
+    </tr>
+
+so now here two rows of diffrent age willl merge and appear as single.
+
+___________________________________________________________________________________________________________________
+
+Question 3: Why should tables be used sparingly for layout purposes? What is a better alternative?
+Answer: Tables should be used sparingly for layout purposes because they were not designed for layout — they are meant for displaying tabular data. Using tables for layout introduces several issues:
+1. Poor Assessibility : Reader will missinterpret the data while reading specially for visually imaparied person.
+2.Inflexible code:there are lots of diffrent atgs are used in the html table which makes it clutter white coding and result will not be proper.
+3.Not responsive: while using diffrent screens it doesnot make it responsive unless used too much css.
+
+better alternative for this is to use Flexbox or Grid with css.
+

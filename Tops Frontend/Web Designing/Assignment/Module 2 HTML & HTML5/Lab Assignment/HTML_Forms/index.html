@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML_Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- here wee have to create a contact form -->
+     <h1>Contact US - Tops Technologies</h1>
+    <form action="#" method="post">
+        <label for="FullName">Full Name :</label>
+        <input type="text" id="FullName" name="FullName" minlength="3" maxlength="50">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="phone" id="phone" name="phone" required 
+           pattern="^[0-9]{10}$" 
+           title="Enter a 10-digit phone number without spaces or special characters.">
+    
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+        <option value="">-- Select Subject --</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+        </select>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10" maxlength="1000" rows="5"></textarea>
+        
+        <button type="submit">Submit</button>
+  
+    </form>
+</body>
+</html>

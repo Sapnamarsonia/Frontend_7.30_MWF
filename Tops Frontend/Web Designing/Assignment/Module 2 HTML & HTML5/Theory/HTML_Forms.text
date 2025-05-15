@@ -1,0 +1,91 @@
+Question 1: What are HTML forms used for? Describe the purpose of the input, textarea, select, and button elements. 
+Answer: HTML forms are use to collect user input and send it to server for processing.they provide structured way for 
+user to enter data,such as name password,email,personal details, feedback etc,which can be then handled by backend scripts 
+or application.
+
+Key Form Elements and Their Purposes:
+1. <input> : it is used to create various types of fields where users can enter their data.
+This include:
+text: Single-line text input.
+password: Text for passwords.
+email: For email addresses with basic validation.
+checkbox: Allows multiple selections.
+radio: Allows one selection from a group.
+submit: Submits the form.
+
+Examples: <input type="text" name="username">
+
+2. <textarea> : Used for multi-line text input (e.g., comments or messages).
+Unlike <input type="text">, this allows longer and multi-line content.
+Example: <textarea name="message" rows="4" cols="50"></textarea>
+
+3. <select> : Creates a dropdown list of options.
+Often used when a user should pick one (or more with multiple attribute) from a list.
+Inside it, <option> elements define the choices.
+EXamples: 
+        <select name="country">
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        </select>
+
+4.<button> : Represents a clickable button.
+Can be used to submit a form (type="submit"), reset it (type="reset"), or trigger JavaScript (type="button").
+More flexible than <input type="submit"> because it can contain HTML (like icons or multiple elements).
+Example: <button type="submit">Send</button>
+_____________________________________________________________________________________________________________________
+
+Question 2: Explain the difference between the GET and POST methods in form submission. When should each be used? 
+Answer: 
+GET Method: 
+Data Visibility: Sends form data appended to the URL in the form of query parameters (key=value&key2=value2). 
+This makes the data visible in the browser's address bar.
+Data Length: Limited by URL length restrictions (generally around 2048 char).
+Caching: GET requests can be cached and bookmarked.
+Use Case: Suitable for non-sensitive data like search forms or filter queries.
+EXample: 
+<form method="GET" action="/search">
+  <input type="text" name="query">
+  <button type="submit">Search</button>
+</form>
+
+POST Method:
+Data Visibility: Sends form data in the body of the HTTP request, making it invisible in the URL.
+Data Length: No practical limit for most use cases (limited by server settings).
+Caching: Not cached or bookmarked.
+Use Case: Suitable for sensitive data (like passwords) or when the form modifies server-side data, 
+such as submitting a form to create a new user or update a record.
+Example:
+<form method="POST" action="/submit">
+  <input type="text" name="username">
+  <input type="password" name="password">
+  <button type="submit">Submit</button>
+</form>
+
+_____________________________________________________________________________________________________________________
+
+Question 3: What is the purpose of the label element in a form, and how does it improve accessibility?
+Answer: The <label> element in a form serves to define a caption or description for a form control.
+like input, select or textarea.
+It helps to improves both usability and accessibility especially for users who rely on screen readers.
+
+Purpose of the <label> Element:
+Describes the Input Field:
+Provides a human-readable description of the form control’s purpose.
+Helps all users understand what data is expected.
+Enhances Clickability:
+When properly associated, clicking the label focuses or activates the corresponding input field, improving the user experience.
+
+Improving Accessibility:
+For screen reader users, the <label> tells them what each form control is for, even if they can’t visually see the screen.
+For users with motor impairments, larger label click areas make form controls easier to interact with.
+
+for explicit association  : 
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email">
+
+Implicit association:
+<label>
+  Email Address:
+  <input type="email" name="email">
+</label>

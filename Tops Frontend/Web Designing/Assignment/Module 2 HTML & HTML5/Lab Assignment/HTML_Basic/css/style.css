@@ -1,0 +1,47 @@
+body
+{ 
+    background-color:aliceblue;
+    padding: 20px;
+
+}
+header
+{
+    background-color:whitesmoke;
+    color: green;
+    margin: 40px;
+    padding: 5px;
+}
+footer
+{
+    background-color: whitesmoke;
+    color: black;
+}
+main
+{
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+aside
+{
+    background-color: #e2e2e2;
+    padding: 30px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+a:hover
+{ text-decoration:wavy;
+
+}
+.maincontent
+{
+   display: flex;
+   gap: 20px;
+}
