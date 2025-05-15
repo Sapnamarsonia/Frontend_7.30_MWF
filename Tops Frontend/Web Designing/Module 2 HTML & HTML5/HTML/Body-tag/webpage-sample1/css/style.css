@@ -1,0 +1,42 @@
+body
+{
+    background-color:#e7edf2;;
+    /* font-family:  we can add font also, for external font we can download  */
+}
+#content
+{
+    width: 50%;
+    height:auto;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 5%;
+    border-top: solid 5px #3d9bdc;
+    display: flex;
+    flex-direction: row;
+}
+.user_img
+{
+   width:30%;
+   height:auto;
+   border-right: solid 1px lightgray;
+   padding:25px;
+}
+.user_info
+{
+    width: 70%;
+    height: auto;
+    padding:50px;
+}
+.user_img img 
+{
+border-radius: 50%;
+}
+#btn 
+{
+width: 50px;
+height: 40px;
+border: solid 2px red;    
+font-size: 20px;
+background-color: white;
+}
