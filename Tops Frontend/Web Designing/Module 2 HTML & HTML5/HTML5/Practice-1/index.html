@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>header tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            background-color:white;
+            margin: 0%;
+            padding: 0%;
+        }
+        header
+        {
+            background-color:gray;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            padding: 15px 18px;
+            font-size: 20px;
+            color:white;
+        }
+        .fa-facebook,
+        .fa-twitter,
+        .fa-instagram
+        {
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+       #nav {
+         width: 100%;
+        border-bottom: solid 2px black;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15%;
+        }
+
+        .logo-container {
+            flex: 1;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li a {
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 19px;
+            font-weight: 700;
+        }
+        #slider
+        {
+            width: 100%;
+            height:auto;
+            overflow: hidden;
+            
+        }
+        #slider img 
+        {
+            width: 100%;
+            height:auto;
+            object-fit: cover; 
+            display: block;
+        }
+        .slider-text
+        {
+            position: absolute;            
+            top: 25%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+         #content
+        {
+            width: 60%;
+            height: auto;
+            padding:15px;
+            margin: 17px;
+            background-color:lightgray;
+            margin-top: 5%;
+            text-align: left;
+            border-radius: 15px;
+        }
+        #content-2
+        {
+            width: 100%;
+            height: auto;
+            font-size: 25px;
+            text-align: center;
+            margin: 50px;
+            padding-left: 40px;  
+            padding-right: 40px;  
+        }
+        #btn
+        {
+            background-color: white;
+            border:2px solid cadetblue;
+            color: cadetblue;
+            border-radius: 25px;
+            font-size: 25px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        #btn:hover
+        {
+            background-color: black;
+            color: white;
+        }
+        .container-3
+        {
+            width: 100%;
+            height: auto;
+            background-color:#ddd;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #Our-team
+        {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+        .team-member 
+        {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            width: 250px;
+            padding: 18px;
+        }
+        #Our-team img
+        {
+            width: 100%;
+            height: auto;
+            border-radius: 20%;
+        }
+        #content-4
+        {
+           margin: 5%;
+           padding:auto;
+           
+        }
+        .box
+        {
+           
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            width: 150px;
+            padding: 40px;
+            display:inline-flex;
+            justify-content:space-between;
+            flex-direction:column;
+            align-items: center;
+            margin: 20px auto;
+
+        }
+        .box h1{
+            font-size: 70px;
+            color: cadetblue;
+            text-align: center;
+            margin: auto;
+        }
+        .box p
+        {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #heading h1
+        {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin-top: 10%;
+            
+        }
+        #heading p
+        {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+
+        }
+        #content-5
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 40px;
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .form-section
+        {
+            flex:1;
+            background:gainsboro;
+            padding: 30px;
+            border-radius: 35px;
+        }
+        .form-section form
+        {
+            display: flex;
+            flex-direction: column;
+            width: 550px;
+            height: auto;
+
+        }
+        .form-section h2
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: cadetblue;
+        }
+        .form-section input,
+        .form-section textarea,
+        .form-section button 
+        {
+            margin-bottom: 15px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        .form-section button
+        {
+            background-color: cadetblue;
+            color: white;
+            cursor: pointer;
+            width: 35%;
+        }
+        .form-section button:hover
+        {
+            background-color:darkcyan;
+        }
+        .image-section
+        {
+            display:flex;
+        }
+        .image-section img
+        {
+            max-width: 105%;
+            height: auto;
+            border-radius: 35px;
+        }
+        .form-section, .image-section 
+        {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        footer 
+        {
+            background-color:darkslategray;
+            color: white
+         }
+         #footer-1
+         {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+         }
+
+        footer h1
+        {
+            margin: 50px;         
+            padding: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+        
+        footer p
+        {
+            margin: 50px;         
+            padding: auto;
+            font-size: 20px;
+        }
+        #footer-btn
+        {
+            margin: 80px;
+            padding: 30px;
+            background-color: cadetblue;
+            font-size: 20px;
+            border-radius:50px;
+            color: white;
+            cursor: pointer;
+        }
+        #footer-2
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        #footer-2 address 
+        {
+            margin: 50px;         
+            padding: -3px;
+            font-size: 20px;
+        }  
+        .fa-facebook,
+        .fa-twitter,
+        .fa-instagram
+        {
+            font-size: 30px;
+            padding-left:30px;            
+        }
+        #footer-2 a
+        {
+            display: block;
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            text-align: center;
+        } 
+        #footer-2 img
+        {
+            max-width: 150px;
+            padding-left: 60px;
+            padding-top: 30px;
+        }
+     </style>
+</head>
+<body>
+    <!-- header starts here -->
+    <header>
+        <div id="call us"><b>Need help? Call us  &nbsp;&nbsp; (+91)-987654321 </style></b></div>
+        <div id="social-media">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-instagram"></span>
+         </div>
+    </header>
+    <!-- header starts here -->
+
+    <!-- nav bar starts here -->
+     <nav id="nav">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo-smart3.png" class="logo">
+            </div>
+        <ul class="menu">
+            <li><a href="Home"> Home</a></li>
+            <li><a href="Pages">Pages</a></li>
+            <li><a href="Contact us">Contact us</a></li>
+            <li><a href="Search"><span class="fa fa-search"></span></a></li>
+        </ul>
+        </div>
+    </nav>
+     <!-- nav bar ends here -->
+
+     <!-- silder starts here -->
+      <section id="slider">
+        <img src="images/image-1.jpg">
+        <div class="slider-text">Our Team</div>
+     </section>
+     <!-- silder ends here -->
+
+     <!-- sections starts here -->
+      <div class="container">
+        <section id="content">
+        <span class="fa fa-bullseye" style="color:cadetblue ; font-size: 50px;"></span>
+        <h1 style="color:cadetblue; font-size: 30px;">Mission</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat qui sequi sunt quod enim nobis molestias placeat beatae dolorem officia? Consectetur totam, quo voluptatem sit ea commodi! Voluptates, porro ipsam.</p>
+         </section>
+    
+        <section id="content">
+        <span class="fa fa-rocket" style="color:cadetblue ; font-size: 50px;"></span>
+        <h1 style="color:cadetblue; font-size: 30px;">Vision</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat qui sequi sunt quod enim nobis molestias placeat beatae dolorem officia? Consectetur totam, quo voluptatem sit ea commodi! Voluptates, porro ipsam.</p>
+        </section>
+
+        <section id="content">
+       <span class="fa fa-users" style="color:cadetblue ; font-size:     50px;"></span>
+        <h1 style="color:cadetblue; font-size: 30px;">Our People</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat qui sequi sunt quod enim nobis molestias placeat beatae dolorem officia? Consectetur totam, quo voluptatem sit ea commodi! Voluptates, porro ipsam.</p>
+        </section>
+      </div>
+     <!-- sections ends here -->
+
+     <!-- section 2 starts here -->
+      <div class="container">
+            <section id="content-2">
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 45px;">People Trust Us</h1>
+            <p>Sample text. Click to select the Text Element. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button id="btn">
+               SEE ALL PRODUCTS 
+            </button>
+            </section>
+        </div>
+          <!-- section 2 ends here -->
+
+        <!-- section 3 starts here -->
+         <div class="container-3">
+            <section id="content-3">
+                <h1 style="font-size: 40px; color: cadetblue;">Our Team</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </section>
+
+             <section id="Our-team">
+                <div class="team-member">
+                <img src="images/member1.jpg" alt="Member 1">
+                <h3>Bob Brown</h3>
+                <p>creative leader</p>
+                </div>
+
+                 <div class="team-member">
+                <img src="images/member2.jpg" alt="Member 2">
+                <h3>Mary Smith </h3>
+                <p>Chief Accountant</p>
+                </div>
+
+                <div class="team-member">
+                <img src="images/member3.jpg" alt="Member 3">
+                <h3>Nick Dark</h3>
+                <p>sales manager</p>
+                </div>
+             </section>
+
+             <section id="content-4">
+                <h1 style="font-size: 40px; color: cadetblue; font-family: sans-serif;">Know more about Smart Home</h1>
+             </section>
+
+             <!-- <section class="box"> -->
+             <div class="box">
+                <h1>20k</h1>
+                <P>Tasks</P>
+            </div>
+               
+            <div class="box">
+                <h1>7k</h1> 
+                <P>Happy Client</P>
+             </div>
+            
+             <div class="box">
+                <h1>156</h1>
+                <P>Cups of Coffee</P>
+             </div>
+            
+             <div class="box">
+                <h1>65</h1>
+                <P>Unique Ideas</P>
+            </div> 
+         </div>               
+            <!-- </section> -->
+        <!-- section 3 ends here -->
+
+        <!-- section 4 starts here -->
+        <div id="heading">
+            <h1>Make Smart Home Project</h1>
+           <p>Sample text. Click to select the Text Element.</p>
+        </div>
+        <section id="content-5">
+        
+            <div class="form-section">
+                 <h2>Inquiry Form</h2>
+                 <form>
+                    <label for="name">Name</label>
+                     <input type="text" placeholder="Enter Your Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <label for="message">Message</label>
+                    <textarea placeholder="Enter Your Message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="image-section">
+                <img src="images/form-image.jpg" alt="Desk-image">
+
+            </div>
+         </section>
+        <!-- section 4 ends here -->
+
+        <!-- footer starts here -->
+         <footer>
+            <section id="footer-1">
+            <div >
+                <h1>Ready to get started?</h1>
+                <p>Let’s talk about creating your competitive advantage.</p>
+            </div>
+            <div>
+                <button id="footer-btn">
+                    TALK TO AN EXPERT
+                </button>
+            </div>
+            </section>
+
+            <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
+
+            <section id="footer-2">
+            <div>
+                <img src="images/logo-smart-white.png" >
+
+                <p>We offer fully customizable solutions that cater to individual needs.</p>
+                <address>
+                <span class="fa fa-map-marker"></span> Dewey Route, East Darrylville, ME 36932, United States
+                </address>
+                <span class="fa fa-facebook"></span>
+                <span class="fa fa-twitter"></span>
+                <span class="fa fa-instagram"></span>
+
+            </div>
+
+            <div>
+                <h1>Need Help?</h1>
+                <p><span class="fa fa-phone"></span>  (+91)-987654321</p>
+                <p>Monday – Friday: 9:00-20:00<br>
+                    Saturday: 11:00 – 15:00</p>
+
+                <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
+
+                <p><span class="fa fa-envelope"></span>  smarthomes@support.com</p>
+            </div>
+            <div>
+                <h1>Quick Links</h1>
+                <a href="">About Company</a>
+                <a href="">Our Services</a>
+                <a href="">Blog</a>
+                <a href="">Testimonials</a>
+                <a href="">Areas We Serve</a>
+                <a href="">Brands</a>
+
+            </div>
+            </section>
+     </footer>
+        <!-- footer ends here -->
+
+</body>
+</html>
