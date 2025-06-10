@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Class-Selector</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color: lightgray;
+        }
+        .content
+        {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow:0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 5%;
+        }
+        .font-style {
+        color: darkblue;
+        text-align: center;
+        font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+      <h1 class="font-style">Class Selector</h1>
+      <p>The class selector matches elements by their class attribute.</p>
+      <p>It is denoted by a period (.) followed by the class name.</p>
+      <p>
+        For example, to select elements with the class "highlight", you would
+        use:
+      </p>
+      <p>class will be repeated more than one times in a section</p>
+      <p>class is not unique</p>
+      <pre>
+    .highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    }
+      </pre>
+
+      <p>
+        In this example, all elements with the class "highlight" will have a
+        yellow background, black text, and bold font.
+      </p>
+      <p>
+        Classes can be applied to multiple elements, allowing for shared styles
+        across different parts of a webpage.
+      </p>
+    </div>
+    
+</body>
+</html>
