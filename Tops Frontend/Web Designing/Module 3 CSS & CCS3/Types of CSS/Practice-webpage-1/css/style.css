@@ -1,0 +1,403 @@
+body      
+{
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    margin-left: 15%;
+
+}
+#header 
+{
+    width: 100%;
+    background-color: bisque;
+    height:70px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(73, 73, 73);
+    letter-spacing: 5px;
+    padding: 1px;
+    font-size:20px;
+}
+
+#navbar
+{
+    overflow: hidden;
+}
+#navbar ul
+{
+    list-style-type: none;
+    margin: 30px;
+    padding: 5px;
+    display: flex;
+
+}
+#navbar ul li
+{
+    display:flex;
+    padding:10px 30px;
+    color: saddlebrown;
+    cursor: pointer;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.fa-user
+{
+    color: rgb(19, 126, 219);
+}
+.fa-shopping-bag
+{
+    color: orange;
+}
+.right 
+{
+    margin-left: auto; 
+    display: flex;
+    gap: 30px;
+}
+#navbar a
+{
+    color:saddlebrown ;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar a:hover
+{
+    color: rgb(19, 126, 219) ;
+}
+#slider
+{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+#slider .left
+{
+    position: relative;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+
+}
+#slider .left img
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover
+}
+
+
+/* Overlay box with text & button */
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.overlay h2 {
+    font-size: 70px;
+    margin: 0 0 10px;
+    color: rgb(65, 64, 64);
+}
+.overlay p 
+{
+    font-size: 25px;
+    margin: 30px 0 15px;
+    color: rgb(65, 64, 64);
+}
+.overlay button 
+{
+    margin-top: 50px;
+    padding: 15px 25px;
+    border: solid orange 3px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+.overlay button:hover {
+    background-color: rgb(247, 146, 38);
+}
+#slider a{
+    text-decoration: none;
+    color: rgb(0, 128, 255);
+    font-weight: bold;
+}
+
+#slider .right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    /* width: 35%; */
+
+}
+#slider .right img
+{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+}
+.overlay-story
+{
+    position:absolute;
+    top:35%;
+    left:53%;
+}
+.overlay-story h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+    color: rgb(65, 64, 64);
+}
+
+.overlay-story p 
+{
+    font-size: 25px;
+    margin: 30px 0 15px;
+    color: rgb(65, 64, 64);
+}
+
+.overlay-story button 
+{
+    margin-top: 50px;
+    padding: 15px 25px;
+    color:rgb(65, 64, 64);
+    border: solid orange 3px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-story button:hover {
+    background-color: darkorange;
+}
+
+#slider-1 {
+    display: flex;
+    gap: 15px;
+    margin-top: 0;
+}
+
+#slider-1 .left-1
+{
+    width: 40%;
+}
+#slider-1 .right-1 
+{
+    width: 60%;
+    position: relative;
+}
+
+#slider-1 .left-1 img,
+#slider-1 .right-1 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+/* Overlay styling for the second image */
+.overlay-1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    
+}
+
+.overlay-1 h2 
+{
+    font-size: 70px;
+    margin: 0 0 10px;
+    color: rgb(65, 64, 64);
+}
+
+.overlay-1 p 
+{
+     font-size: 25px;
+    margin: 30px 0 15px;
+    color: rgb(65, 64, 64);
+}
+
+.overlay-1 button 
+{
+     margin-top: 50px;
+    padding: 15px 25px;
+    border: solid  3px rgb(0, 128, 255);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-1 button:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+/* Ensure image fills the container and allows overlay */
+.right-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+#slider-1 a{
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+}
+#latest-arrivals 
+{
+    width: 100%;
+    text-align: center;
+}
+#latest-arrivals h1
+{
+    color:  rgb(11, 167, 245);
+    font-size: 65px;
+    font-family: monospace;
+}
+.content-image 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.content-image .product
+{
+    border: 2px solid gray;
+}
+.content-image img 
+{
+    width: 300px;
+    height: auto;
+}
+.content-image p
+{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555353;
+    font-size: 25px;
+}
+footer 
+{
+    width: 100%;
+    background-color: #D54647;
+    color: #fff;
+    font-family:cursive;
+    margin-top: 60px;
+}
+
+.footer-container 
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* makes it responsive */
+  gap: 15px;
+  margin: 20px;
+}
+
+.footer-section 
+{
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+footer .copyright
+{
+    padding: auto;
+    text-align: center;
+}
+.footer-container-2 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+
+}
+.footer-container-2 .footer-section
+{
+    flex: 1;
+     min-width: 250px;
+}
+.footer-container-2 h3 
+{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-container-2 p 
+{
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+.email-form 
+{
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+}
+.email-form input[type="email"] 
+{
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.email-form button 
+{
+  padding: 10px 20px;
+  background-color: #f9a825;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+
+}
+.email-form button:hover 
+{
+  background-color: whitesmoke;
+}
+.copyright {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+}

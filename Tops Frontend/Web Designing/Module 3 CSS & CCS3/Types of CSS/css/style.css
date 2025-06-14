@@ -1,0 +1,18 @@
+body
+{
+    width: 70%;
+    background-color: rgb(247, 163, 209);
+    margin: auto;
+    padding: 25%;
+}
+#header
+{
+    background-color: aliceblue;
+    padding: 25px;
+}
+#header h1
+{
+    text-align: center;
+    color: blueviolet;
+    background-color: darksalmon;
+}
