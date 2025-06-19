@@ -1,0 +1,292 @@
+body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+#portfolio-header
+{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-bottom: solid 1px gray;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    position: sticky;
+    z-index: 5;
+}
+.call-us
+{
+    font-size:25px;
+    margin-left:6%;
+    padding: 14px;
+}
+.search-box 
+{
+    width: 50%;
+    height: auto;
+    margin-left: 2%;
+    padding: 10px;
+}
+.search-box input
+{
+    width: 650px;
+    height: auto;
+    padding: 10px;
+}
+.social-media
+{
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+#portfolio-navbar
+{
+    width: 100%;
+    height: auto;
+    background-color:#4791eb;
+    padding: 10px;
+}
+#portfolio-navbar ul 
+{
+    margin-left: 20% ;
+}
+#portfolio-navbar ul li
+{
+    display: inline-block;
+    padding: 2px 35px;
+    font-size: 20px;
+}
+#portfolio-navbar a 
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+#portfolio-slider
+{
+    width: 100%;
+    height: auto;
+    background-color:#83afe4;
+    padding: 25px;
+}
+.banner
+{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+.banner img 
+{
+    width: 50%;
+    height: 320px;
+    margin-left: 25%;
+    border-radius: 50%;
+    margin-top: 5%;
+    animation: fadeIn 6s infinite;
+}
+.banner img:hover 
+{
+  transition: 0.5s ease all;
+  width: 52%;
+  height: 335px;
+  border: solid 5px white;
+}
+.banner h1 
+{
+  font-size: 65px;
+  color: white;
+  line-height: 0.5;
+  text-shadow: 5px 5px black;
+  animation:   2s infinite;
+}
+.banner p 
+{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  line-height: 0.5;
+}
+#portfolio-content
+{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+#portfolio-content .our-experience hr 
+{
+  width: 34%;
+  border: solid 2px gray;
+}
+#portfolio-content .our-skills hr
+{
+    width:25%;
+    border: solid 2px gray;
+}
+#portfolio-content .our-education hr 
+{
+  width: 25%;
+  border: solid 2px gray;
+}
+#portfolio-content  .personal-details hr 
+{
+  width: 32%;
+  border: solid 2px gray;
+}
+#portfolio-content  .contact-us hr 
+{
+    width: 25%;
+    border: solid 2px gray;
+}
+#portfolio-content  .download-resume hr 
+{
+    width: 50%;
+    border: solid 2px gray;
+}
+.our-experience,
+.our-skills,
+.our-education,
+.personal-details,
+.contact-us,
+.download-resume
+{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 4% !important;
+}
+.our-experience h1,
+.our-skills h1,
+.our-education h1,
+.personal-details h1,
+.contact-us h1 ,
+.download-resume h1 
+{
+    font-size: 45px;
+    text-align: center;
+    line-height: 0.7;
+}
+.our-experience li 
+{
+  font-size: 20px;
+}
+.our-education th 
+{
+  background-color:#83afe4;
+  color: white;
+  font-size: 25px;
+}
+.our-education td 
+{
+  font-size: 20px;
+}
+.personal-details th 
+{
+  font-size: 25px;
+  text-align: left;
+}
+.personal-details td 
+{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20% !important;
+}
+.our-address 
+{
+    width: 45%;
+    height: auto;
+    padding: 20px;
+    float: left !important;
+    font-size: 20px;
+}
+.contact-form
+{
+    width: 45%;
+    height: auto;
+    padding: 20px;
+    float: right;
+    margin-top: 2%;
+}
+.contact-form input,
+textarea 
+{
+    width: 350px;
+    height: auto;
+    padding: 8px;
+}
+.contact-form input[type='submit'] 
+{
+    width: 370px;
+    height: auto;
+    padding: 15px;
+    border: none;
+    background-color: #4791eb;
+    color: black;
+}
+.contact-form legend 
+{
+  font-size: 30px;
+}
+.clearfix {
+  clear: both !important;
+}
+.download-resume b 
+{
+  font-size: 25px;
+  margin-left: 30%;
+  margin-top: 5% !important;
+}
+
+#portfolio-footer 
+{
+  width: 100%;
+  height: auto;
+  background-color:#4791eb;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+.page-links,
+.social-contacts,
+.newsletter 
+{
+  width: 40%;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+.page-links h1,
+.social-contacts h1,
+.newsletter h1 
+{
+  font-size: 35px;
+  text-align: center;
+}
+.page-links ul li 
+{
+  display: block;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px 25px;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.page-links a 
+{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  padding-right: 40px;
+}
+.newsletter input 
+{
+  width: 350px;
+  height: auto;
+  padding: 8px;
+}
