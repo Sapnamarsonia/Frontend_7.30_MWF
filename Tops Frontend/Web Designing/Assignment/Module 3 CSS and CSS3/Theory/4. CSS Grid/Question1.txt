@@ -1,0 +1,11 @@
+Question: Explain CSS Grid and how it differs from Flexbox. When would you use Grid over 
+Flexbox? 
+CSS Grid is two-dimentional layout system in css that allow us to design a web page using both rows and column.
+It is best suited for the complex layouts.
+Flexbox is a one Dimensional layout system.It is used to layout items in a single direction.
+either row or column.
+
+When to Use Grid Over Flexbox:
+When your layout involves rows and columns (e.g., dashboards, galleries, web page templates).
+When you want to align items both vertically and horizontally in a structured way.
+When you need more control over spacing and item placement.

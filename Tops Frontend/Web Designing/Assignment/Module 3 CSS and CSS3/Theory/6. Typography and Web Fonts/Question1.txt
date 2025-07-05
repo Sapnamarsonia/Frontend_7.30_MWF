@@ -1,0 +1,10 @@
+Explain the difference between web-safe fonts and custom web fonts. Why might you use a web-safe font over a custom font? 
+
+Web safe fonts are the fonts which is pre-installed on the most of the operating system and devices.Examples include Arial, Times New Roman, Courier New, Verdana, and Georgia. Since they're already available on users' systems, no downloading is required.
+
+Custom web fonts, on the other hand, are not pre-installed. They are typically loaded from external services (like Google Fonts or Adobe Fonts) using @font-face or link tags. Examples include Roboto, Open Sans, Lato, etc.
+
+Faster loading: No extra font files to download.
+Better performance on slow connections.
+More reliable rendering across browsers (no fallback needed).
+Improved accessibility in low-bandwidth areas or on older devices.

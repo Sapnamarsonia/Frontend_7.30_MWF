@@ -1,0 +1,13 @@
+Write a basic media query that adjusts the font size of a webpage for screens 
+smaller than 600px.
+
+@media only screen and (max-width:600px)
+{
+    body 
+    {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:768px) targets devices with the screen width of 600px or less.
+

@@ -1,0 +1,41 @@
+Describe the grid-template-columns, grid-template-rows, and grid-gap 
+properties. Provide examples of how to use them.
+
+=> Grid-template-columns:
+Defines the number and width of columns in the grid.
+
+Example:
+.container 
+{
+  display: grid;
+  grid-template-columns: 200px 1fr 100px;  (1fr = 1 fraction of the available space)
+}
+
+this will create a grid with 3 column. 200px wide and flexible column and 100px wide.
+
+=> Grid-template-rows:
+Defines the number and height of rows.
+
+Example:
+.container 
+{
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+}
+This creates 3 rows: first is 100px, second is flexible (auto), third is 50px.
+
+=> Grid Gap
+Defines the spacing between rows and columns in the grid.
+
+Example:
+.container 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 20px;
+}
+Adds 20px spacing between all grid cells (both horizontally and vertically).
+
+
+

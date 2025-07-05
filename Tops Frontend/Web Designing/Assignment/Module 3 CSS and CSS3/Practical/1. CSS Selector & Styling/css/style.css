@@ -1,0 +1,107 @@
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#container
+{
+    width: 90%;
+    height: 600px;
+    background-color:rgb(120, 175, 249);
+    margin: 5%;
+    padding: 10px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+
+}
+.contact-info
+{
+    padding: 50px;
+    position: relative;
+}
+.address
+{
+    position: absolute;
+    margin-top: 12%;
+    display: flex;
+    padding: 50px;
+}
+.address-1
+{
+    padding-right: 70px;
+}
+.address-2
+{
+    padding-left: 100px;
+}
+.fa
+{
+   margin-right: 8px;
+}
+.address p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+.message
+{
+    width: 40% ;
+    background-color: white;
+    color: black;
+    margin: 3%;
+    border-radius: 8px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.message h2
+{
+    text-align: center;
+    color: grey;
+}
+.message form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.message label 
+{
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.message input[type="text"],
+.message input[type="email"],
+.message textarea 
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.message textarea 
+{
+    min-height: 120px;
+}
+.message button 
+{
+    margin-top: 20px;
+    padding: 12px;
+    background-color:yellowgreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.message button:hover 
+{
+    background-color: green;
+}

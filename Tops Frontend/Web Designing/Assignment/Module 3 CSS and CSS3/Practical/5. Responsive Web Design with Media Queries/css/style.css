@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color:white;
+}
+header 
+{
+    width: 100%;
+    height: auto;
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 25px;
+    font-size: larger;
+    color: white;
+}
+nav
+{
+    width: 100%;
+    height: auto;
+    background-color:bisque;
+    font-size:30px;
+    text-align: center;
+    padding: 25px;
+}
+nav a
+{
+    text-decoration: none;
+    color: brown;
+    padding: 1rem;
+}
+#content
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+.column
+{
+    flex: 1;
+    background-color: lightgray;
+    padding: 1.5rem;
+}
+.column h2
+{
+    text-align: center;
+    font-size: 30px;
+}
+.column p
+{
+    text-align: center;
+    font-size: 25px;
+
+}
+.column img
+{
+    display: block;
+    margin: 5% auto 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+footer
+{
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+}
+
+/* Responsive Design  for tablet view + mobile view */
+@media only screen and (max-width:768px)
+{
+    body
+    {
+        font-size: 1rem;
+    }
+    #content
+    {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .column
+    {
+        padding: 1rem;
+        
+    }
+    .column img
+    {
+        align-content: center;
+    }
+    nav,footer
+    {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+}

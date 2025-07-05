@@ -1,0 +1,65 @@
+What is a CSS selector? Provide examples of element, class, and ID selectors.
+
+A CSS selector selects the HTML element we want to style.
+ CSS seletors are divided into five categories:
+
+  syntax :  
+
+  <style>
+    selector
+    {
+        property:value;
+    }
+  </style> 
+
+Types of css selector :
+   1) simple selector
+        a) universal selector 
+        b) element selector 
+        c) id selector 
+        d) class selector 
+   2) grouping selector  
+   3) combinator selector 
+        a) descendent combinator (space)
+        b) child combinator (>)
+        c) next sibling combinator (+)
+        d) subsequent sibling combinator (~)
+   4) pseudo element selector 
+   5) pseudo class selector 
+   6) attributes selector  
+_________________________________________________________________________
+Examples of element selector:
+The element selector selects HTML elements based on the element name.
+
+p{
+     text-align: center;
+     color:red;
+}
+here, all <p> elements on the page will be center-align,with red text.
+
+_________________________________________________________________________
+Examples of id selector:
+
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+#para1
+{
+     text-align:center;
+     color:green;
+}
+
+_________________________________________________________________________
+EXample of class selector:
+
+The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+here in this examples all html element with class="center" will be red and center.

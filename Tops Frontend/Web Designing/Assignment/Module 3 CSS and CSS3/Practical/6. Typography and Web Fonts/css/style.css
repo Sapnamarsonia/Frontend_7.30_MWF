@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    font-family: "Diplomata", serif;
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+}
+#cover-image
+{
+    width: 100%;
+    position: relative;
+}
+#cover-image img
+{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+#cover-image .cover-text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+#container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.left-content
+{
+   flex: 1 1 60%;
+    margin: 2rem;
+}
+.left-content h1
+{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    font-size:2rem;
+    padding: 0.5rem;
+}
+.left-content p
+{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+.right-content
+{
+    flex: 1 1 30%;
+    margin: 2rem;
+}
+.right-content .about-me
+{
+    border: 2px solid gray;
+    width: 60%;
+    margin-top: 5%;
+}
+.right-content img
+{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+.right-content h1
+{
+    margin-left: 10%;
+    font-size: 2rem;
+    color: brown;
+  font-family: "Dancing Script", cursive;
+}
+hr
+{
+    width: 80%;
+}
+.right-content p
+{
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.right-content .social-media
+{
+    border: 2px solid gray;
+    width: 60%;
+    margin-top: 5%;
+}
+.right-content .social-media a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 10px 25px;
+    font-size: 1.5rem;
+}
+.social-media .fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-envelope 
+{
+    border: 1px solid #999;
+    background-color:white;
+    color: gray;
+    transition: all 0.3s ease;
+    padding: 4px;
+}
+
+.social-media .fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-envelope:hover 
+{
+    background-color: #dddddd28;
+    transform: scale(1.1);
+}
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 1024px) 
+{
+    header 
+    {
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+
+    #cover-image img 
+    {
+        height: 500px;
+    }
+
+    .left-content p 
+    {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .right-content p 
+    {
+        font-size: 2rem;
+    }
+
+    .right-content .social-media a 
+    {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    #container 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .right-content 
+    {
+        flex: 1 1 100%;
+        margin: 1rem;
+    }
+
+    .right-content .about-me,
+    .right-content .social-media 
+    {
+        width: 90%;
+    }
+
+    .left-content p 
+    {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    #cover-image img 
+    {
+        height: 400px;
+    }
+
+    #cover-image .cover-text 
+    {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .right-content img 
+    {
+        width: 80%;
+        max-width: 250px;
+    }
+    .right-content p
+    {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .right-content .social-media a 
+    {
+        font-size: 1.7rem;
+        margin: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    header 
+    {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    #cover-image img 
+    {
+        height: 300px;
+    }
+
+    #cover-image .cover-text h2 
+    {
+        font-size: 1.2rem;
+    }
+
+    #cover-image .cover-text p 
+    {
+        font-size: 0.9rem;
+    }
+
+    .left-content h1 
+    {
+        font-size: 1.3rem;
+    }
+
+    .left-content p 
+    {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    .right-content p 
+    {
+        font-size: 1.3rem;
+    }
+
+    .right-content .social-media a 
+    {
+        font-size: 1.3rem;
+        margin: 8px 20px;
+    }
+
+    .right-content img 
+    {
+        width: 90%;
+        max-width: 200px;
+    }
+}

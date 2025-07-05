@@ -1,0 +1,29 @@
+Explain the concept of CSS specificity. How do conflicts between multiple styles 
+get resolved? 
+
+CSS Specificity is a system used by browsers to determine which CSS rule applies when multiple rules could apply to the same element. It’s essentially a ranking system that resolves conflicts between competing styles.
+
+Every CSS selector has a position in the specificity hierarchy.
+
+Priority	                 |    Example	              |      Description
+Inline style	             | <h1 style="color: pink;">  |	    Highest priority, directly applied with the style attribute
+Id selectors	             | #navbar	                  |     Second highest priority, identified by the unique id attribute of an element
+Classes and pseudo-classes	 | .test, :hover	          |     Third highest priority, targeted using class names
+Attributes	                 | [type="text"]	          |     Low priority, applies to attributes
+Elements and pseudo-elements | h1, ::before, ::after	  |     Lowest priority, applies to HTML elements and pseudo-elements
+
+
+More Specificity Rules:
+=======================
+1.Equal specificity: the latest rule wins
+2.ID selectors have a higher specificity than attribute selectors
+3.A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc.
+4.The universal selector (*) and inherited values - The universal selector (*) and inherited values do not impact the specificity weight value
+
+
+Conflict Resolution Rules:
+==========================
+Higher specificity wins.
+If specificity is equal, the later rule in the CSS file wins (source order).
+!important can override specificity (but should be avoided unless necessary).
+
