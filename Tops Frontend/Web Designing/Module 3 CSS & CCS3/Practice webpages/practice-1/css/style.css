@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    background-color:rgb(251, 210, 155);
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 40px;
+    position: relative;
+}
+.logo-circle
+{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(109, 195, 198);
+}
+.logo-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ribbon 
+{
+    margin-top:-2rem;
+    background-color: white;
+    padding: 10px 25px;
+    position: relative;
+    color: saddlebrown;
+    font-weight: bold;
+    font-size:2rem;
+    border-radius: 40px;
+    font-family: 'Pacifico', cursive;
+}
+.logo-container p
+{
+    font-family: "Libertinus Mono", monospace;
+    font-size: 1.8rem;
+    color: saddlebrown;
+    font-weight: bold;
+
+}
+.login-buttons 
+{
+    position: absolute;
+    top: 2rem;
+    right: 300px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: saddlebrown;
+}
+
+.login-buttons .fa-user,
+.login-buttons .fa-shopping-bag 
+{
+    background-color: white;
+    color: saddlebrown;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-buttons .fa-user:hover,
+.login-buttons .fa-shopping-bag:hover 
+{
+    background-color: saddlebrown;
+    color: white;
+}
+.navigation
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;          
+}
+.navigation ul
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    gap: 10px;
+}
+.navigation ul li
+{
+    display:inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: saddlebrown;
+    border:rgb(109, 195, 198)  solid 3px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+}
+.navigation a 
+{
+    font-size: 1.5rem;
+    color: saddlebrown;
+    text-decoration: none;
+}
+.image-slider 
+{
+    position: relative;
+    overflow: hidden;
+    margin:auto;
+    margin-top: 5%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    
+}
+.slider-container 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeSlide 9s infinite;
+}
+
+/* Offset animations for each slide */
+.slide1 
+{
+  animation-delay: 0s;
+}
+.slide2 
+{
+  animation-delay: 2s;
+}
+.slide3 
+{
+  animation-delay: 4s;
+}
+
+/* Fade animation keyframes */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.main-content
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    padding:3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.main-content img
+{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border: solid white 5px;
+}
+
+/* animation  */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.box 
+{
+    animation: slideInFromRight 2s ease-out forwards;
+    opacity: 0; /* start invisible */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.box1 {
+    animation-delay: 0s;
+}
+.box2 {
+    animation-delay: 0.2s;
+}
+.box3 {
+    animation-delay: 0.5s;
+}
+.box4 {
+    animation-delay: 0.8s;
+}
+.box5 {
+    animation-delay: 1.2s;
+}
+.footer
+{
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.border
+{
+
+    display: inline;
+    margin: auto;
+}
+.border img
+{
+
+    height:1.2rem;
+    width: auto;
+    margin-left: 15px;
+}
+.border .fa-star
+{
+    font-size: 3rem;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.8rem;
+}
+.menu
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family:monospace;
+    font-size:1.5rem;
+    color: saddlebrown;
+    text-align: center;
+}
+.menu a
+{
+    text-decoration: none;
+    color: saddlebrown;
+    font-size:1.7rem;
+}
+.menu1 .fa 
+{
+    margin: 0 10px; 
+    font-size: 1.8rem; 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu1 .fa:hover 
+{
+    color: rgb(109, 195, 198); 
+}
+.copyright
+{
+    color: white;
+    font-family: "Libertinus Mono", monospace;
+    text-align: center;
+    font-size: x-large;
+    margin: 3%;
+
+}
+.chatbox-container 
+{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+.chat-button 
+{
+    background-color: saddlebrown;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.chat-button:hover 
+{
+    background-color: rgb(109, 195, 198);
+}
+.chatbox 
+{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 280px;
+    height: 350px;
+    background: white;
+    border: 2px solid saddlebrown;
+    border-radius: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+}
+
+#chat-toggle:checked ~ .chatbox 
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.chatbox-header 
+{
+    background: saddlebrown;
+    color: white;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+   
+}
+.chat-close 
+{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.chatbox-body 
+{
+    padding: 15px;
+    text-align: center;
+}
+
+.chatbox-body input 
+{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+/* Responsive for mobile  */
+
+@media screen and (max-width: 768px) 
+{
+    header 
+    {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .logo-circle 
+    {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .ribbon 
+    {
+        font-size: 1.5rem;
+        padding: 8px 20px;
+        margin-top: -1.5rem;
+    }
+
+    .logo-container p 
+    {
+        font-size: 1.4rem;
+    }
+
+    .login-buttons 
+    {
+        display: flex;
+        flex-direction: column;
+        top: 1rem;
+        right: 8px;
+        font-size: 2rem;
+    }
+
+    .login-buttons .fa-user,
+    .login-buttons .fa-shopping-bag 
+    {
+        padding: 10px 12px;
+        font-size: 1.5rem;
+    }
+    .navigation ul 
+    {
+        flex-direction: row;
+        gap: 9px;
+        align-items: center;
+    }
+
+    .navigation ul li 
+    {
+        padding:8px;
+        font-size: 1.4rem;
+    }
+
+    .navigation a 
+    {
+        font-size: 1.2rem;
+    }
+
+    .image-slider 
+    {
+        width: 90%;
+        height:auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .main-content 
+    {
+        width: 100%;
+        padding: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .main-content img 
+    {
+        aspect-ratio: 1 / 1;
+    }
+
+    .footer 
+    {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu 
+    {
+        flex-direction: column;
+        padding: 30px;
+        font-size: 1.4rem;
+        gap: 20px;
+    }
+
+    .menu a 
+    {
+        font-size: 1.4rem;
+    }
+    .border
+    {
+        display: inline;
+    }
+    .border img
+    {
+        width:40%;
+    }
+    .border .fa-star
+    {
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 1rem;
+        padding: 0.8rem;
+    }
+    .copyright 
+    {
+        font-size: 1.5rem;
+        margin: 5%;
+    }
+
+    .chatbox-container {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .chat-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .chatbox {
+        width: 90vw;
+        height: 300px;
+        right: 0;
+    }
+
+    .chatbox-body input {
+        width: 95%;
+    }
+}

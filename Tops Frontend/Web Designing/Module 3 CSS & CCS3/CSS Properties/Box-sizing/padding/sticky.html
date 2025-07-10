@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sticky header example</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            min-height: 200vh;
+        }
+        .spacer
+        {
+            height: 100px;
+        }
+        .sticky-header/* Example 1: position: sticky (modern, recommended) */
+        {
+            background-color: lightgreen;
+            color:green;
+            position: sticky;
+            top: 0;
+            font-size: 1.5em;
+            padding: 25px;
+            z-index: 100;
+        }
+        .fixed-header/* Example 2: position: fixed (classic) */
+        {
+            width: 100%;
+            background-color: plum;
+            color: purple;
+            position: fixed;
+            top:60px;
+            left: 0;
+            z-index: 101;
+            padding: 25px;
+            font-size: 1.5em;
+        }
+      .sticky-shadow-header/* Example 3: position: sticky with box-shadow */
+        {
+            position: sticky;
+            top: 0;
+            background:lightcoral;
+            color:red;
+            padding: 20px;
+            font-size: 1.5em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 102;
+        }
+      .scroll-container /* Example 4: sticky inside a scrollable container */
+        {
+            height: 200px;
+            overflow: auto;
+            border: 2px solid #ccc;
+            margin-top: 40px;
+        }
+        .container-header 
+        {
+            position: sticky;
+            top: 0;
+            background: #9b59b6;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.2em;
+            z-index: 103;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-header">Sticky Header (position: sticky)</div>
+    <div class="spacer"></div>
+    <div class="fixed-header">Fixed Header (position: fixed)</div>
+    <div class="spacer">if we do top-0 in both the style then it will overlap each other</div>
+    <div class="sticky-shadow-header">Sticky Header with Shadow</div>
+    <div class="spacer"></div>
+
+     <div class="scroll-container">
+      <div class="container-header">Sticky Header in Scrollable Container</div>
+      <div>
+        <p>Content line 1</p>
+        <p>Content line 2</p>
+        <p>Content line 3</p>
+        <p>Content line 4</p>
+        <p>Content line 5</p>
+        <p>Content line 6</p>
+        <p>Content line 7</p>
+        <p>Content line 8</p>
+        <p>Content line 9</p>
+        <p>Content line 10</p>
+      </div>
+    </div>
+</body>
+</html>
