@@ -1,0 +1,57 @@
+what is bootstrap ?
+bootstrap is a framework of website designing
+bootstrap is used to design responsive websites
+bootstrap is a free and open-source front-end framework for designing websites and web applications.
+Bootstrap contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+Bootstrap also provides optional JavaScript plugins.
+Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first projects on the web.
+Bootstrap is a free and open-source front-end framework for designing websites and web applications.
+Bootstrap is a framework for building responsive websites and web applications.
+=============================================================================================================================================
+
+what is meant by responsive websites ?
+Responsive websites are websites that automatically adjust their layout and content based on the size of the user's screen or device. This means that whether a user is viewing the website on a desktop computer, tablet, or smartphone, the website will look good and be easy to use.
+
+Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.
+
+
+broswers device breakpoints for responsive design
+
+| Device Type       | Breakpoint (px) |
+
+|-------------------|-----------------| 
+
+| Mobile            | 320px           |
+| Mobile Landscape  | 480px           |
+| Tablet            | 768px           |
+| Tablet Landscape  | 1024px          |
+| Desktop           | 1280px          |
+| Large Desktop     | 1440px          |
+| Extra Large Desktop | 1920px        |
+| Extra Large Desktop | 2560px        |
+| Extra Large Desktop | 3840px        |
+| Extra Large Desktop | 5120px        |
+| Extra Large Desktop | 7680px        |
+| Extra Large Desktop | 10240px        |
+| Extra Large Desktop | 15360px        |
+| Extra Large Desktop | 20480px        |
+| Extra Large Desktop | 30720px        |
+| Extra Large Desktop | 40960px        |
+
+
+what is bootstrap CDN ?
+Bootstrap CDN (Content Delivery Network) is a service that allows you to link to Bootstrap's CSS and JavaScript files hosted on a remote server instead of downloading and hosting them on your own server. This can speed up the loading time of your website, as CDNs are optimized for fast delivery and often have multiple servers around the world to serve content closer to the user.
+
+Bootstrap CDN is a free service that provides access to the latest version of Bootstrap's CSS and JavaScript files. It allows developers to quickly and easily include Bootstrap in their projects without having to download and host the files themselves.
+
+
+types of CDN ?
+There are several types of Content Delivery Networks (CDNs), each serving different purposes and use cases. Here are some common types:
+
+1) offline CDN  
+Offline CDN refers to a Content Delivery Network that is not connected to the internet. It is typically used for local development and testing purposes, allowing developers to work with static files without needing an internet connection.
+
+   ex: 
+
+2) online CDN
+Online CDN refers to a Content Delivery Network that is connected to the internet and provides access to static files such as images, videos, and other media. It is typically used to deliver content to users over the internet, improving website performance and reducing latency.
