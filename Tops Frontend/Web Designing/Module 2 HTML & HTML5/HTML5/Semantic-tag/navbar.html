@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>nav tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color:honeydew;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 20px;
+            background-color: #f8f8f8;
+            border-bottom: solid 2px black;
+        }
+        b{
+            font-size: 25px;
+        }
+        input[type='text']
+        {
+            width: 500px;
+            height: auto;
+            padding: 8px;
+        }
+        .fa-facebook,
+        .fa-whatsapp,
+        .fa-youtube,
+        .fa-instagram
+        {
+            font-size: 25px;
+            letter-spacing: 8px;
+        }
+        #nav
+        {
+            background-color: black;
+            width: 100%;
+            height: auto;
+        }
+        #nav ul
+        {
+            display: flex;
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+            justify-content: center;
+
+        }
+        #nav a
+        {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header starts here -->
+    <header>
+        <div id="call us"><b>Call us : (+91) 987654321</b></div>
+        <div id="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div id="social-media">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-youtube"></span>
+            <span class="fa fa-whatsapp"></span>
+
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- nav bar starts here -->
+     <nav id="nav">
+        <ul>
+          <a href=""><span class="fa fa-home"></span>&nbsp;Home</a>
+            <li><a href="">about us</a></li>
+            <li><a href="">gallery</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- nav bar ends here -->
+</body>
+</html>
