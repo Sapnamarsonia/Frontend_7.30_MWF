@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab Assignmnet of HTML5 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+      <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+        }
+        
+        canvas {
+            border: 1px solid #000;
+            margin-top: 10px;
+        }
+        svg {
+            margin-top: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 5 Lab Assignmentt</h1>
+
+    <!-- Audio Tag -->
+    <h2>Audio Example</h2>
+    <audio controls autoplay loop muted>
+        <source src="audio/flute-melody-110-bpm-152519.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Video Tag -->
+    <h2>Video Example</h2>
+    <video width="320" height="240" controls autoplay loop muted>
+        <source src="video/6243293-hd_1080_1920_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- SVG Shapes -->
+    <h2>SVG Shapes</h2>
+    <svg width="300" height="200">
+        <!-- Rectangle -->
+        <rect x="10" y="20" width="100" height="50" fill="blue" />
+
+        <!-- Circle -->
+        <circle cx="180" cy="40" r="30" fill="green" />
+
+        <!-- Triangle (using polygon) -->
+        <polygon points="60,130 10,180 110,180" fill="red" />
+    </svg>
+
+</body>
+</html>

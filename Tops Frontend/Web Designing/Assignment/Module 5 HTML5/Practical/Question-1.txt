@@ -1,0 +1,13 @@
+ Question 1: Difference b/w HTML & HTML5?
+
+| Feature                   | HTML                                          | HTML5                                                |
+| ------------------------- | --------------------------------------------- | ---------------------------------------------------- |
+| Version                   | Older versions (HTML 4.01, XHTML)             | Latest major version of HTML                         |
+| Multimedia Support        | Requires plugins (like Flash) for audio/video | Native support for audio and video elements          |
+| Doctype Declaration       | Long and complex                              | Simple: `<!DOCTYPE html>`                            |
+| New Elements              | Limited semantic elements                     | Introduces semantic tags like `<header>`, `<footer>` |
+| Browser Compatibility     | May require extra scripting or plugins        | Designed to work better across modern browsers       |
+| Form Controls             | Basic input types                             | New input types like `email`, `date`, `range`, etc.  |
+| Graphics                  | Not supported natively                        | `<canvas>` and `<svg>` elements for drawing          |
+| Storage                   | Limited (mostly cookies)                      | LocalStorage, SessionStorage, WebSQL                 |
+| APIs                      | No built-in APIs                              | Includes APIs like Geolocation, Web Workers, etc.    |

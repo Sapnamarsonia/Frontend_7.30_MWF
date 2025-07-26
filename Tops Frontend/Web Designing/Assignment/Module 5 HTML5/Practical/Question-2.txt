@@ -1,0 +1,28 @@
+Question 2: Additional Tags Used in HTML5
+HTML5 introduced many new tags to enhance semantics and multimedia support. Some of the most important new tags include:
+
+Semantic Tags
+<header> – Defines a page or section header
+<footer> – Defines a page or section footer
+<article> – Represents a self-contained piece of content
+<section> – Defines a section in a document
+<nav> – For navigation links
+<aside> – For content tangentially related to the main content
+<main> – Represents the main content of the document
+
+Multimedia Tags
+<audio> – Embeds audio content
+<video> – Embeds video content
+<source> – Specifies media resources for <audio> and <video>
+<track> – Provides text tracks for media elements (like subtitles)
+
+Graphics Tags
+<canvas> – Used for drawing graphics via JavaScript
+<svg> – Scalable Vector Graphics support
+
+Form Enhancements
+New input types: email, date, time, url, range, color, etc.
+<datalist> – Provides an autocomplete feature for input
+<output> – Represents the result of a calculation or user action
+<progress> – Displays a progress bar
+<meter> – Represents a scalar measurement (like disk usage)
