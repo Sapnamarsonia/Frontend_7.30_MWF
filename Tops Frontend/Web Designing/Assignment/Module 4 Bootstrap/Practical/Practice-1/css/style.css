@@ -1,0 +1,63 @@
+.menu ul li
+{
+    text-decoration: none;
+    display:inline-block;
+    padding: 1rem;
+    color:gray;
+}
+.slider-img 
+{
+  height:450px;
+}
+.product-item 
+{
+position: relative;
+overflow: hidden;
+}
+
+.product-category 
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
+color: white;
+padding: 10px 20px;
+font-size: 1.5rem;
+text-transform: uppercase;
+z-index: 2;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.product-category span 
+{
+display: block;
+font-size: 1rem;
+font-weight: normal;
+margin-top: 5px;
+}
+
+.product-item img {
+  height: 100%;
+  object-fit: cover;
+transition: opacity 0.3s ease;
+}
+.product-item:hover img {
+opacity: 0.7; /* hover effect */
+}
+.popular-products img
+{
+  height: 300px;
+  width: 300px;
+
+}
+a {
+  text-decoration: none;
+  color: inherit; /* inherits parent color */
+}
+
+a:hover {
+  text-decoration: underline; /* optional for hover effect */
+}

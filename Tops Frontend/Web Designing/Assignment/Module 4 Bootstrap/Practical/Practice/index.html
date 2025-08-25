@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional: Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .logo
+    {
+         animation: slideInLeft 1s ease-out;
+    }
+    @keyframes slideInLeft 
+    {
+        0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+
+    .main {
+      background: url('https://static.vecteezy.com/system/resources/previews/001/877/448/original/dark-blue-techno-background-free-vector.jpg') center center/cover no-repeat;
+      color: white;
+      font-weight: bold;
+      padding: 120px 0;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar starts here -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container m-3">
+      <a class="logo navbar-brand ms-5 fw-bold fs-1" href="index.html">TechStartup</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-3 d-flex gap-4">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</button>
+        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Sign In Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="signin-email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signin-email" required>
+            </div>
+            <div class="mb-3">
+              <label for="signin-password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signin-password" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Sign In</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="signup-name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="signup-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signup-email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signup-email" required>
+            </div>
+            <div class="mb-3">
+              <label for="signup-password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signup-password" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Sign Up</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- main Section -->
+  <section class="main text-center">
+    <div class="container">
+      <h1 class="display-3">Empowering Your Digital Future</h1>
+      <p class="lead fs-3">We build tools that help startups grow faster, smarter, and stronger.</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 bg-light">
+    <div class="container text-center">
+      <h1 class="mb-4 fs-1">What We Offer</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="bi bi-gear-fill display-4 text-primary"></i>
+          <h3 class="mt-3 fw-bold">Custom Development</h3>
+          <p class="fs-4">Tailor-made web and mobile solutions for your business needs.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-bar-chart-fill display-4 text-success"></i>
+          <h3 class="mt-3 fw-bold">Analytics & Insights</h3>
+          <p class="fs-4">Real-time data tracking to help make better decisions.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-shield-lock-fill display-4 text-danger"></i>
+          <h3 class="mt-3 fw-bold">Security First</h3>
+          <p class="fs-4">We ensure your data is safe with enterprise-grade security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://img.freepik.com/premium-photo/business-technology-team-collaboration-collaborative-tools-team-coordination-communication_996430-950.jpg?w=2000" alt="Our Team" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fs-1">About Us</h2>
+          <p class="fs-3">We're a passionate team of developers, designers, and strategists who believe in using technology to drive innovation. Since our founding in 2022, we've helped dozens of companies bring their ideas to life.</p>
+          <p class="fs-3">We focus on simplicity, speed, and scalability — and we’re here to help you grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light m-3">
+    <div class="container border border-3">
+      <h2 class="text-center mb-4 mt-4 fs-1">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 fs-5">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-4">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <div class="container">
+      <p class="mb-0 fs-5">&copy; 2025 TechStartup. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
