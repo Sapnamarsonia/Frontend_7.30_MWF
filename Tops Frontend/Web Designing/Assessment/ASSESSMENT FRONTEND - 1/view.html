@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>View Submissions</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Submissions</h2>
+        <div id="submissionsContainer"></div>
+        <a href="index.html" class="view-link">Back to Form</a>    
+    </div>
+
+        <script>
+        const container = document.getElementById('submissionsContainer');
+        const submissions = JSON.parse(localStorage.getItem('submissions'));
+
+        if (!submissions || submissions.length === 0) {
+          container.innerHTML = "<p>No data available.</p>";
+        } else {
+          let table = `<table border="1" width="100%" cellpadding="10">
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>detail</th>
+              <th>Complaint</th>
+            </tr>`;
+
+          submissions.forEach((item) => {
+            table += `<tr>
+              <td>${item.name}</td>
+              <td>${item.phone}</td>
+              <td>${item.email}</td>
+              <td>${item.detail}</td>
+              <td>${item.complaint}</td>
+            </tr>`;
+          });
+
+          table += '</table>';
+          container.innerHTML = table;
+        }
+      </script>
+</body>
+</html>

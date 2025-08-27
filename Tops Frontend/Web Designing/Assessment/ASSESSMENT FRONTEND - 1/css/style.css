@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: Arial, sans-serif;
+  background: url(https://wallpapers.com/images/hd/light-color-background-vmkuihk29pi1xq65.jpg);
+  padding:20px;
+  margin-top: 50px;
+}
+.container 
+{
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15px;
+    border: 2px gray solid;
+}
+h2
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightskyblue;
+    padding: 15px;
+    margin-top: 2px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form-group 
+{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+label 
+{
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+input, textarea 
+{
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea 
+{
+    resize: vertical;
+    min-height: 80px;
+}
+button 
+{
+    padding: 15px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color:green;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+}
+button[type="reset"] 
+{
+  background-color:rgb(230, 44, 44);
+}
+button:hover 
+{
+  opacity: 0.8;
+}
+
+.error 
+{
+  color: red;
+  font-size: 15px;
+}
+
+.success 
+{
+  color: green;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.view-link 
+{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+@media (max-width: 600px) 
+{
+  .buttons 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons button 
+  {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Customer Complaint Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <script src='main.js'></script>
+</head>
+<body>
+        <div class="container">
+            <h2>Customer Complaint Form</h2>
+            <form id="complaintForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="fullName" placeholder="Enter Your Full Name" required>
+                    <small id="nameError" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter 10- digit Phone Number" required>
+                    <small id="phoneError" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    <small id="emailError" class="error"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="detail">Vehicle Details</label>
+                    <input type="text" id="detail" name="detail" placeholder="Enter Your Vehicle Details" required>
+                    <small id="detailError" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="complaint">Complaint Description</label>
+                    <textarea id="complaint" name="complaint" placeholder="Describe the issue" required></textarea>
+                    <small id="complaintError" class="error"></small>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+
+            <!-- success message  -->
+            <p id="successMessage" style="color: green; font-weight: bold;"></p>
+
+            
+
+            <!-- link for view data  -->
+            <a href="view.html" class="view-link">View Submissions</a>
+        </div>
+
+<!-- javascript link -->
+<script src="script.js"></script>
+
+</body>
+</html>
