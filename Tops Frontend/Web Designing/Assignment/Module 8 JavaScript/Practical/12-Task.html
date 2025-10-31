@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Error Handling</title>
+</head>
+<body style="background-color: rgb(179, 204, 249);">
+    <h1 style="text-align: center; font-size: 35px;">JavaScript Error Handling</h1>
+    <hr>
+    <script>
+        try 
+        {
+        let numerator = 10;
+        let denominator = 0 ;
+
+        if(denominator === 0 )
+        {
+            throw new Error("Cannot Divide by Zero");
+            
+        }
+        let result = numerator/denominator ;
+        console.log("Result : ", result);
+        }
+        catch (error) 
+        {
+        console.log("Error occurred:", error.message); 
+        }
+        console.log("Program continues after error handling...");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+Question 1: What is an object in JavaScript? How are objects different from arrays? 
+An object in JavaScript is a collection of key–value pairs.
+The keys (also called properties) are strings (or Symbols).
+The values can be any data type — numbers, strings, arrays, functions, or even other objects.
+Objects are used to store data in a structured way.
+Example: 
+const person = {
+    name : "alia",
+    age : "30",
+    city : "Rajkot",
+    greet: function(){
+        console.log("Hello!");
+    }
+}; So Here "name","age","city" are keys and "alia",30,"rajkot" are values.
+
+Diifrence Between Object and arrays:
+-> Object store data in key-value pair, Access by property name,best for representing entities like user or products.
+Example: const person = { name: "Alia", age: 30 };
+
+-> Array store as ordered list of element , can be access by index number, best for the list or collections of items.
+Example : const fruits = ["apple", "banana", "cherry"]; // Array
+
+=========================================================================
+Question 2: Explain how to access and update object properties using dot notation and 
+bracket notation. 
+
+1. Dot Notation
+Syntax: objectName.propertyName
+Easiest and most common way (but only works when the key is a valid identifier — no spaces or special characters).
+Example:
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2020
+};
+
+// Access property
+console.log(car.brand);  // Output: Toyota
+
+// Update property
+car.year = 2022;
+console.log(car.year);   // Output: 2022
+
+2. Bracket Notation
+Syntax: objectName["propertyName"]
+Useful when:
+The property name is stored in a variable.
+The property name has spaces or special characters.
+const car = {
+  brand: "Toyota",
+  "car color": "blue"
+};
+
+// Access property
+console.log(car["brand"]);       // Output: Toyota
+console.log(car["car color"]);   // Output: blue
+
+// Update property
+car["car color"] = "red";
+console.log(car["car color"]);   // Output: red
+
+// Using a variable as key
+const key = "brand";
+console.log(car[key]);           // Output: Toyota
+

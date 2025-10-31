@@ -1,0 +1,51 @@
+Question 1: What is error handling in JavaScript? Explain the try, catch, and finally blocks with an example. 
+Error handling in JavaScript refers to the process of detecting and responding to errors that occur during the 
+execution of a program.
+Errors might happen due to:
+Invalid user input
+Network issues
+Undefined variables or functions
+Incorrect data formats, etc.
+JavaScript provides a mechanism called the try...catch...finally block to handle such errors gracefully without 
+stopping the execution of the entire program.
+
+=> Try, catch, and finally blocks with an example.
+Syntax:  
+try {
+  // Code that may throw an error
+} catch (error) {
+  // Code to handle the error
+} finally {
+  // Code that will always run, regardless of whether there was an error
+}
+
+Example : 
+try {
+  let num = 10;
+  console.log(num / x);     // 'x' is not defined — this will throw an error
+} catch (error) {
+  console.log("An error occurred: " + error.message);
+} finally {
+  console.log("This will always run, regardless of an error.");
+}
+
+=============================================================================================================
+Question 2: Why is error handling important in JavaScript applications?
+
+Error handling is crucial for building robust, user-friendly applications. Here’s why:
+
+1. Prevents application crashes:
+Without error handling, a single runtime error can stop script execution entirely.
+
+2. Improves user experience:
+Instead of displaying confusing technical errors, you can show user-friendly messages like
+“Something went wrong. Please try again.”
+
+3. Easier debugging and maintenance:
+Properly caught errors can be logged, making it easier for developers to identify and fix problems.
+
+4. Ensures program flow continues smoothly:
+Error handling allows the program to recover or continue performing other operations even after an error occurs.
+
+5. Helps handle asynchronous operations:
+With features like try...catch in async/await, you can manage network or API errors cleanly.

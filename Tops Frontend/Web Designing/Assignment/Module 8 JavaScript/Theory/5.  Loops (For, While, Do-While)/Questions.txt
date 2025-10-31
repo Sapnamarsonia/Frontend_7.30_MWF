@@ -1,0 +1,58 @@
+Question 1: Explain the different types of loops in JavaScript (for, while, do-while). Provide a 
+basic example of each. 
+Loops are used in JavaScript to execute a block of code multiple times until a certain condition is met.
+The main types of loops are:
+for loop
+while loop
+do...while loop
+
+1. for loop -> Used when you know in advance how many times you want the loop to run.
+Syntax : 
+for (initialization; condition; increment/decrement) 
+{
+  // code to be executed
+}
+Example : 
+for (let i = 1; i <= 5; i++) 
+{
+  console.log("Count:", i);
+}
+
+2. while loop ->  Used when you don’t know beforehand how many times the loop will run — it continues while a condition is true.
+The loop runs while the condition i <= 5 is true.
+Syntax :
+while (condition) 
+{
+  // code to be executed
+}
+
+Example : 
+let i = 1;
+while (i <= 5) {
+  console.log("Number:", i);
+  i++;
+}
+
+3. do...while loop -> Used when you want the code to run at least once, even if the condition is false initially.
+Syntax:
+do {
+  // code to be executed
+} while (condition);
+
+Example:
+let i = 1;
+do {
+  console.log("Value:", i);
+  i++;
+} while (i <= 5);
+This prints 1 to 5, but the condition is checked after the loop body executes.
+
+=========================================================================
+
+Question 2: What is the difference between a while loop and a do-while loop?
+
+The main difference between a while loop and a do-while loop in JavaScript lies in when the condition is checked and how many times the loop executes.
+
+In a while loop, the condition is checked before the execution of the loop body. This means that if the condition is false at the very beginning, the loop body will not execute even once. Therefore, the while loop is often used when you want to repeat a block of code only if a certain condition is true from the start.
+
+On the other hand, in a do-while loop, the condition is checked after the loop body has executed. This ensures that the code inside the loop runs at least once, even if the condition is false initially. The do-while loop is useful when you need the loop body to execute before checking the condition — for example, when taking user input or performing an initial action before validation.

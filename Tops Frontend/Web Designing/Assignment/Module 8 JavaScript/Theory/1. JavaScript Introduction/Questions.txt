@@ -1,0 +1,43 @@
+Question 1: What is JavaScript? Explain the role of JavaScript in web development.
+
+javascript is a client side scripting langauge
+it is used to make web pages interactive
+it is a lightweight interpreted programming language
+it is designed for creating network-centric applications
+
+Role of JavaScript in Web Development:
+
+Client-side scripting: JavaScript runs in the browser and interacts with HTML and CSS to control webpage behavior.
+Dynamic Content: It can modify webpage content without reloading (e.g., dropdowns, modals, image sliders).
+Form Validation: Checks user inputs before they’re submitted to the server.
+Event Handling: Responds to user actions like clicks, keypresses, or mouse movements.
+Communication: Works with APIs and sends/receives data (e.g., using fetch() or AJAX).
+Used with frameworks/libraries: Like React, Angular, or Vue to build modern, responsive applications.
+====================================================================
+Question 2: How is JavaScript different from other programming languages like Python or Java? 
+
+JavaScript:
+C-like syntax; uses {} for blocks and ; to end statements.
+It is event-driven and often runs in the browser.
+Runs in the browser or Node.js (no compilation needed).
+Mainly used for web development (frontend and backend using Node.js).
+
+Python: Popular for data science, automation, AI, web development (backend).
+Python is used more for data analysis, scripting, and automation.
+Runs in an interpreter (scripted and executed line-by-line).
+Focuses on readability; uses indentation to define code blocks.
+
+Java: Used in enterprise applications, Android development, and large systems.
+Java is used in large-scale applications like Android or banking software.
+Verbose and strongly structured; requires more boilerplate code.
+Compiled into bytecode and runs on the Java Virtual Machine (JVM).
+
+=====================================================================
+Question 3: Discuss the use of <script> tag in HTML. How can you link an external JavaScript file to an HTML document?
+
+Use of <script> Tag in HTML:
+The <script> tag is used to embed or reference JavaScript code in an HTML document.
+It can be placed in the <head> or before the closing </body> tag.
+
+Linking external javascript:
+To use external JavaScript, use the src attribute of the <script> tag.<script src="script.js"></script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body style="background-color:thistle;">
+    <h1 style="text-align: center; font-size: 40px;">JavaScript Events</h1>
+    <hr>
+    <h2 style="text-align: center; font-size: 25px;">Click The Button</h2>
+    <button id="btn" style="margin-left: 46%; font-size: 25px; border-radius: 20px;padding: 15px;">Click me</button>
+    
+    <script>
+        // select the button element
+        let btn = document.getElementById('btn'); 
+
+        // add an event listner for the click event
+        btn.addEventListener('click' , function(){
+            alert('Button Clicked');
+        });
+    </script>
+</body>
+</html>

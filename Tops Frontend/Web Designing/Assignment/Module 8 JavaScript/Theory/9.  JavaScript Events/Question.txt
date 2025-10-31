@@ -1,0 +1,53 @@
+Question 1: What are JavaScript events? Explain the role of event listeners. 
+An event in JavaScript is an action or occurrence that happens in the browser, which the program can respond to.
+Events are triggered by users or the browser itself.
+
+Examples of events:
+User actions: clicking a button, typing in a text box, moving the mouse, submitting a form.
+Browser actions: page load, image load, error occurrence, resizing the window.
+
+Example:
+// Example event: user clicks a button
+<button onclick="alert('Button clicked!')">Click Me</button>
+Here, the onclick event is triggered when the button is clicked.
+
+Role of event listeners
+An event listener is a function that waits (or "listens") for a specific event to happen on a specific element, and then executes a callback function in response.
+Event listeners separate JavaScript code from HTML, making your code cleaner and easier to maintain.
+You can attach multiple listeners to the same element.
+They provide more control than using inline event attributes like onclick.
+=================================================================================
+Question 2: How does the addEventListener() method work in JavaScript? Provide an example.
+The addEventListener() method allows you to listen for specific events on an element and run a function when that event occurs.
+
+Example: element.addEventListener( event, function );
+event = The name of the event (e.g., "click", "mouseover", "keydown")
+function = The function to run when the event occurs (called the event handler)
+
+Example : Basic Usage 
+
+<button id="myButton">Click Me</button>
+
+<script>
+  const button = document.getElementById("myButton");
+
+  // Add an event listener for the "click" event
+  button.addEventListener("click", function() {
+    alert("Button was clicked!");
+  });
+</script>
+
+
+Example : Using named Function
+<button id="greetBtn">Say Hello</button>
+
+<script>
+  const greetBtn = document.getElementById("greetBtn");
+
+  function sayHello() {
+    console.log("Hello, world!");
+  }
+
+  // Attach the event listener
+  greetBtn.addEventListener("click", sayHello);
+</script>

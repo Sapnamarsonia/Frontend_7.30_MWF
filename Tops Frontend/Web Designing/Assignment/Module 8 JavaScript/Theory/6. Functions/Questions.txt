@@ -1,0 +1,65 @@
+Question 1: What are functions in JavaScript? Explain the syntax for declaring and calling a 
+function. 
+
+A function in JavaScript is a block of reusable code designed to perform a specific task. Functions help make code modular, organized, and easier to maintain. Instead of writing the same code multiple times, you can define it once inside a function and call it whenever needed.
+
+Syntax for declaring a function:
+function functionName(parameters) 
+{
+  // code to be executed
+}
+
+Syntax for calling (invoking) a function:
+functionName(arguments);
+
+=======================================================================
+Question 2: What is the difference between a function declaration and a function expression? 
+
+A function declaration defines a named function using the function keyword, while a function expression defines a function as part of an expression—often assigned to a variable.
+
+1) Function Declaration
+Defined with the function keyword followed by a name.
+Hoisted, meaning it can be called before it is defined in the code.
+Example :
+function sayHello() {
+  console.log("Hello!");
+}
+sayHello();   // Works even if called before the declaration
+
+2) Function Expression
+The function is assigned to a variable (can be named or anonymous).
+Not hoisted, meaning it can be called only after it is defined.
+Example:
+const sayHi = function() {
+  console.log("Hi!");
+};
+
+sayHi();    //Works only after this line
+
+=======================================================================
+Question 3: Discuss the concept of parameters and return values in functions.
+Functions often need inputs to work with and can also produce outputs.
+These are handled through parameters and return values.
+
+1) Parameters
+Parameters are variables listed inside the parentheses in the function definition.
+They act as placeholders for the values (called arguments) passed when the function is called.
+Example :
+function add(a, b) {
+  console.log(a + b);
+}
+add(5, 3);    // Output: 8
+Here, a and b are parameters, and 5 and 3 are arguments.
+
+2) Return Values
+
+A function can send a value back to the place where it was called using the return statement.
+Once return is executed, the function stops running.
+Example:
+function multiply(x, y) {
+  return x * y;
+}
+
+let result = multiply(4, 5);
+console.log(result); // Output: 20
+Here, the function multiply returns the product of x and y, which is then stored in the variable result.

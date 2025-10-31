@@ -1,0 +1,51 @@
+Question 1: What are variables in JavaScript? How do you declare a variable using var, let, and const? 
+JavaScript variables are the container for the data.
+we can declare the variables in 3 ways.
+using let, var, const keyword.
+
+Creating a variable in JavaScript is called declaring a variable.
+You declare a JavaScript variable with the var keyword , let keyword or the const keyword.
+to declare the variable we can write 
+1. var name = "Alia";
+here variable name is declared using var keyword and value is asign using equal sign.  
+2. let numnber = 25;
+here variable number is declared using let keyword and value is asign using equal sign.  
+3. const lastname = "kumar";
+here variable lastname is declared using const keyword and value is asign using equal sign.  
+
+========================================================================
+Question 2: Explain the different data types in JavaScript. Provide examples for each. 
+A JavaScript variable has 8 types of data.
+
+String = A text of characters enclosed in quotes
+ex:  let name = "demo1";
+
+Number = A number representing a mathematical value
+ex:  let height = "165";
+
+Bigint	= A number representing a large integer
+ex: let a = 123456789526585256n;
+
+Boolean = A data type representing true or false
+let x = true;
+
+Object = A collection of key-value pairs of data
+const person = {Firstname: "Kinjal", Lastname : "Patel"};
+
+Undefined = A primitive variable with no assigned value
+let x;
+
+Null = A primitive value representing object absence
+let x = null;
+
+Symbol = A unique and primitive identifier
+const y = Symbol();
+
+========================================================================
+Question 3: What is the difference between undefined and null in JavaScript?
+
+undefined is automatically assigned by JavaScript, while null must be explicitly set by the developer.
+
+undefined indicates a variable has been declared but not assigned a value, whereas null represents an intentional absence of value.
+
+In loose equality (==), null and undefined are considered equal (true), but in strict equality (===), they are not (false).

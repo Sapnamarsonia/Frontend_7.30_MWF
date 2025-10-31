@@ -1,0 +1,16 @@
+Question 1: What are the different types of operators in JavaScript?
+Operators are for Mathematical and Logical Computations 
+Explain with examples. 
+o Arithmetic operators 
+    Arithmetic Operators are used to perform arithmetic on numbers:
+    there are are 8 types of arithmetic arithmetic operators.
+    Addition,Subtraction, Multipliocation, Division, Modulus, Increment,Decrement,
+    
+o Assignment operators 
+    The Assignment Operator (=) assigns a value to a variable:
+    ex: let x = 10; // asign a value of x 
+        let y = 15; // asign a value of y
+o Comparison operators 
+o Logical operators 
+Question 2: What is the difference between == and === in JavaScript? 
+Here in JavaScript == means it check the value

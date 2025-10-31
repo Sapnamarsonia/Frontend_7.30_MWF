@@ -1,0 +1,49 @@
+<!--Create a JavaScript program using a switch statement to display the day of the week 
+based on the user input (e.g., 1 for Monday, 2 for Tuesday, etc.).-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Control Flow (Switch Case)</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+</head>
+<body style="background-color: azure;">
+    <h1 style="text-align: center; font-size:45px;">Control Flow Switch-case Statements</h1>
+    <hr>
+<script>
+    var n = prompt("Enter a number (1-7):")
+    var day = Number(n)
+
+    switch (day) {
+        case 1:
+            alert("Monday")          
+            break;
+        case 2:
+            alert("Tuesday")          
+            break; 
+        case 3:
+            alert("Wednesday")          
+            break; 
+        case 4:
+            alert("Thursday")          
+            break; 
+        case 5:
+            alert("Friday")          
+            break;
+        case 6:
+            alert("Saturday")          
+            break;
+        case 7:
+            alert("Sunday")          
+            break;
+        default:
+          alert("Invalid input. Please enter a number between 1 and 7.")
+      
+    }
+</script>
+
+
+</body>
+</html>

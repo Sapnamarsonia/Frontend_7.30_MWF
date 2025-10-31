@@ -1,0 +1,69 @@
+Question 1: What is the DOM (Document Object Model) in JavaScript? How does JavaScript interact with the DOM? 
+Definition:
+The DOM (Document Object Model) is a programming interface that represents an HTML or XML document as a tree structure.
+Each element, attribute, and piece of text in the HTML document becomes a node in this tree.
+JavaScript can use the DOM to access, modify, add, or delete elements dynamically on a webpage.
+
+Example:
+If you have an HTML document:
+<html>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+The DOM looks like this (conceptually):
+Document
+   | 
+  html
+   |
+  body
+  |-h1
+  |-p
+How JavaScript Interacts with the DOM
+
+JavaScript can:
+Access elements in the DOM (e.g., find an element by ID or class).
+Modify content or attributes (e.g., change text, styles, or images).
+Add or remove elements dynamically.
+Respond to events (e.g., clicks, input, hover).
+
+Example: 
+
+<p id="demo">Original text</p>
+
+<script>
+  const paragraph = document.getElementById("demo"); // Access element
+  paragraph.textContent = "Text changed by JavaScript!"; // Modify content
+  paragraph.style.color = "blue"; // Modify style
+</script>
+
+================================================================================================
+Question 2: Explain the methods getElementById(), getElementsByClassName(), and querySelector() used to select elements from the DOM.
+
+1. getElementById(id)
+Selects one element with the specified id.
+Returns a single element object or null if not found.
+
+Example: 
+const element = document.getElementById("header");
+element.style.backgroundColor = "yellow";
+
+2. getElementsByClassName(className)
+Selects all elements with the given class name.
+Returns a live HTMLCollection (like an array, but not exactly).
+You can access individual items using indexes.
+
+Example:
+const items = document.getElementsByClassName("menu-item");
+items[0].style.color = "red";  // Change first item color
+
+3. querySelector(selector)
+Selects the first element that matches a CSS selector.
+Returns a single element or null if no match.
+More flexible than getElementById() or getElementsByClassName() because it supports CSS selectors (like #id, .class, div > p, etc.)
+
+Example:
+const firstParagraph = document.querySelector("p.intro");
+firstParagraph.style.fontSize = "18px";
+

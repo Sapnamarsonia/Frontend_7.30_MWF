@@ -1,0 +1,46 @@
+Question 1: What is an array in JavaScript? How do you declare and initialize an array? 
+
+Definition:
+An array in JavaScript is a special type of object used to store multiple values in a single variable.
+Each value in an array is called an element, and each element has an index (starting from 0).
+
+Declaration and Initialization:
+Example :
+let fruits = ["apple", "banana", "cherry"];
+Here, fruits is an array containing three string elements.
+We can access the elements using their index
+console.log(fruits[0]); // Output: "apple"
+
+=====================================================================
+Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays. 
+
+1) push()
+Adds one or more elements to the end of the array.
+
+Example: 
+let fruits = ["apple", "banana"]; 
+fruits.push("cherry"); 
+console.log(fruits);    // ["apple", "banana", "cherry"]
+
+2) pop()
+Removes the last element from the array and returns it.
+
+Example:
+let fruits = ["apple", "banana", "cherry"]; 
+let last = fruits.pop(); 
+console.log(last); // "cherry" console.log(fruits); // ["apple", "banana"]
+
+3) shift()
+Removes the first element from an array.
+Example:
+let fruits = ["apple", "banana", "mango"];
+let first = fruits.shift();
+console.log(first);   // "apple"
+console.log(fruits);  // ["banana", "mango"]
+
+4) unshift()
+Adds one or more elements to the beginning of an array.
+Example:
+let fruits = ["banana", "mango"];
+fruits.unshift("apple");
+console.log(fruits); // ["apple", "banana", "mango"]
