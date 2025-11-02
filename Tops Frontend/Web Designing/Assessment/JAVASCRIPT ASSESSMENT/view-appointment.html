@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Appointments</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    table {
+      padding: 4px;
+    }
+    th{
+      padding: 10px;
+    }
+    tr {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>View Appointments</h1>
+
+    <input type="text" id="search" placeholder="Search by name or date...">
+
+    <table border="1" width="100%" id="appointmentTable">
+      <thead>
+        <tr>
+          <th>Name</th><th>Email</th><th>Phone</th>
+          <th>Date</th><th>Time</th><th>Comment</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <p id="noData" style="display:none;">No appointments found.</p>
+
+    <a href="index.html" class="link">Back to Form</a>
+  </div>
+
+</body>
+</html>

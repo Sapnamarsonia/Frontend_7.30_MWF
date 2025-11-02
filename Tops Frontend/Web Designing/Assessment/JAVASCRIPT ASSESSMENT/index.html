@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hospital Appointment Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <main class="container">
+        <h1>Hospital Appointment Form</h1>
+        <hr>
+        <form id="appointmentForm" class="appointment-form">
+        <label>Applicant Name:</label>
+        <input type="text" id="name" placeholder="Enter Name" required/>
+
+        <label>Email Address:</label>
+        <input type="email" id="email" placeholder="Enter Email" required />
+
+        <label>Phone Number:</label>
+        <input type="number" id="phone" placeholder="Enter Number" required />
+
+        <label>Date of Appointment:</label>
+        <input type="date" id="date" required />
+
+        <label>Time of Appointment:</label>
+        <input type="time" id="time" required />
+
+        <label>Medical Disease Comment:</label>
+        <textarea id="comment" rows="4" required></textarea>
+
+        <button type="submit">Book Appointment</button>
+        </form>
+
+        <div id="message"></div>
+        <button id="btn1"><a href="view-appointment.html">View Appointments</a>
+        </button>
+  </main>
+  <script type="module" src="js/appointmentHandler.js"></script>
+
+</body>
+</html>
